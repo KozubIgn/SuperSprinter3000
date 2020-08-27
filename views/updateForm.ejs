@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update User Story</title>
+</head>
+<body>
+<header><h1>Update User Story</h1></header>
+<div class="container">
+    <form method="POST" action="/story/<%= id %>">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" value="<%= title %>"><br><br>
+
+        <label for="story">Story:</label><br>
+        <textarea name="story"><%= story %></textarea><br><br>
+
+        <label for="criteria">Acceptance Criteria:</label><br>
+        <textarea name="criteria"><%= criteria %></textarea><br><br>
+
+        <label for="businessValue">Business value:</label><br>
+        <input type="text" id="businessValue" name="businessValue" maxlength="4" size="3"
+               value="<%= businessValue %>"><br><br>
+
+        <label for="estimation">Estimation:</label><br>
+        <input type="text" id="estimation" name="estimation" maxlength="2" size="3" value="<%= estimation %>"><br><br>
+
+        <label for="status">Status:</label><br>
+        <select name="status">
+            <option value="planning">planning</option>
+            <option value="todo">todo</option>
+            <option value="in_progress">in progress</option>
+            <option value="review">review</option>
+            <option value="done">done</option>
+        </select><br><br>
+
+        <input type="submit" id="button" value="Update">
+    </form>
+</div>
+
+</body>
+</html>

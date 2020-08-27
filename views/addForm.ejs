@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add User Story</title>
+</head>
+<body>
+<h1>Add User Story</h1>
+<div class="container">
+    <form method="POST" action="/story">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"><br><br>
+
+        <label for="story">Story:</label><br>
+        <textarea name="story"></textarea><br><br>
+
+        <label for="criteria">Acceptance Criteria:</label><br>
+        <textarea name="criteria"></textarea><br><br>
+
+        <label for="businessValue">Business value:</label><br>
+        <input type="text" id="businessValue" name="businessValue" maxlength="4" size="3"><br><br>
+
+        <label for="estimation">Estimation:</label><br>
+        <input type="text" id="estimation" name="estimation" maxlength="2" size="3"><br><br>
+
+        <input type="submit" id="button" value="Confirm">
+    </form>
+</div>
+
+</body>
+</html>

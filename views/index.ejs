@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SUPER SPRINTER 3000 - user stories system></title>
+
+  </head>
+  <body>
+    <h1>SUPER SPRINTER 3000 - user stories system</h1>
+    <br><br><br>
+    <table id="my-table">
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>User Story</th>
+        <th>Acceptance Criteria</th>
+        <th>Business value</th>
+        <th>Estimation</th>
+        <th>Status</th>
+      </tr>
+      <% routes.forEach(function(data){ %>
+        <tr>
+          <td><%= data.id %></td>
+          <td><a href="/story/<%= data.id %>"><%= data.story_title %></a></td>
+          <td><%= data.user_story %></td>
+          <td><%= data.acceptance_criteria %></td>
+          <td><%= data.business_value %></td>
+          <td><%= data.estimation %></td>
+          <td><%= data.status_story%></td>
+        </tr>
+      <% }) %>
+    </table>
+  </body>
+</html>
